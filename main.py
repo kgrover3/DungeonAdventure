@@ -1,9 +1,12 @@
 #RPG Again
+import sys
 import random
 import time
+import lib.Weapons
 
-from .DungeonAdventure.lib import Weapons
 
+#Data Location Variables
+wepList = lib.Weapons.weaponList
 
 #Game Variables
 playing = False
@@ -50,7 +53,7 @@ def getName(name):
 
 name = getName(name);
 print('hello ' + name + ' are you ready to play?')
-randWep = random.choice(Weapons.weaponList)
+randWep = random.choice(wepList)
 print (randWep)
 
 
